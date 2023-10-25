@@ -56,9 +56,5 @@ def train(dataset_train: str, dataset_validation: str, model_weights: str = None
             
             auc, roc = AUC(predictions, label)
 
-
-
-    
-
 if __name__ == "__main__":
     train()
