@@ -1,8 +1,8 @@
 import torch
 import torch.nn as nn
-from net import get_resnet50
-from datasets import get_dataloader
-from metrics import AUC
+from src.models.net import get_resnet50
+from src.datasets.datasets import get_dataloader
+from utils.metrics import AUC
 
 DEVICE = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
 
